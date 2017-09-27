@@ -1,0 +1,36 @@
+var count = 1;
+while (count <= 6){
+    console.log("count is: " + count);
+count+=2
+}
+var slovo = "Hello";
+var cislo = 0;
+while (cislo<slovo.length){
+    console.log (slovo[cislo]);
+    cislo++
+}
+
+var numero = 10;
+while (numero <=40){
+console.log(numero)
+numero+=2
+}
+var number = 5;
+while (number<50){
+    if(number % 5 === 0 && number % 3 === 0){
+        console.log(number)
+    }
+    number++
+}
+var anoyed =  prompt("are we there yet?");
+while (anoyed != "yes" && annoyed != "yeah"){
+ var anoyed = prompt ("are we there yet?")
+}
+alert ("hello")
+console.log("anooying question advanced")
+
+var anoyed =  prompt("are we there yet?");
+while (anoyed.indexOf("yes") === -1){
+   var anoyed = prompt ("are we there yet?")
+}
+alert ("hello")
