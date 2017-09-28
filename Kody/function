@@ -1,0 +1,47 @@
+function nasobenie (num){
+    console.log(num * num);
+}
+
+function pocitame (wide, lenght){
+    console.log (wide * lenght)
+}
+function pocitame2 (wide, lenght){
+    return wide * lenght;
+}
+var result = pocitame2(100,582);
+console.log("The result is: " + result);
+
+console.log("CAPITALIZE");
+function capitalize (str){
+    return str.charAt(0).toUpperCase() + str.slice(1)
+}
+var city = "paris";
+var capital = capitalize(city);
+
+console.log ("isEven problem");
+function isEven (number) {
+    if (number % 2 === 0){
+        return "True";
+    }
+    else{
+        return "False";
+    }
+}
+console.log("shorter")
+function isEven (shorter) {
+    return shorter % 2 === 0
+}
+
+console.log("kebabToSnake");
+function kebab(str) {
+   var newStr = str.replace(/-/g , "_");
+    return newStr 
+}
+
+function faktorial (num){
+    var bla = 1;
+    for (var i = 2; i <= num; i++){
+       bla*=i;
+    }
+    return bla
+}
