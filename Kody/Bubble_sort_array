@@ -1,0 +1,16 @@
+var pole = [4,6,2,5,8,5,4,6,8,6,45,3,5,7];
+
+function bubble (num){
+var len = num.length;
+for (i = 0; i < len; i++){
+    for(j = 0; j < len - i - 1; j++){
+        if (num[j] > num[j+1]) {
+            var swap = num[j];            
+            num[j] = num[j+1];
+            num[j + 1] = swap;          
+        }
+    }
+  
+}
+return num
+}
