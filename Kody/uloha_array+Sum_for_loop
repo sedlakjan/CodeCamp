@@ -9,4 +9,4 @@ function sum (num){
 }
 
 var array = [1,2,3];
-array.reduce(function(a,b){return a+b})
+array.reduce(function(a,b){return a+b}0)
