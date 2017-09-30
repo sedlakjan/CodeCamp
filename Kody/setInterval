@@ -1,0 +1,11 @@
+function fun(){
+console.log("Hello")
+console.log("goodbye")
+}
+setInterval(fun, 2000);
+//runs function fun in every 2000ms
+
+//another way
+setInterval(function test{
+console.log("Hello again!")
+},2000);
