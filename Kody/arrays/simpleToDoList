@@ -1,0 +1,25 @@
+var col ["green","blue","red"]; col.push("yellow") // Ads yeallow at the end of col
+                                col.pop() // Remove last var from col
+                                 col.unshift("purple") // Ads purple at the [0] position of col
+                                 col.shift() // Remove [0] var from col
+                                 col.indexOf("blue") // Find item in array blue = [1], if not found then [-1]
+                                 var anotherColor = col.slice(0, 2) // copy items from variable
+                                 
+
+
+
+
+var todos = [];
+var question = prompt ("what would you like to do?");
+while (question !== "quit"){
+if (question === "list"){
+    console.log(todos);
+}
+else if (question === "new"){
+    var newTodo = prompt("enter new todo");
+    todos.push(newTodo);
+
+}
+question = prompt ("what would you like to do?")
+}
+console.log("Ok, You Quit the App");
