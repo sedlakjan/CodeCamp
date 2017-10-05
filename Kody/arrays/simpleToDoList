@@ -24,3 +24,49 @@ else if (question === "new"){
 question = prompt ("what would you like to do?")
 }
 console.log("Ok, You Quit the App");
+
+
+
+//DELETE
+else if (quest === "delete"){
+ var delet = prompt ("what do you want to delete?");
+   var i = list.indexOf(delet);
+    delete list[i]
+ //(4) ["lol", "auto", "pes", "macka"]
+//[empty × 1, "auto", empty × 1, "macka"]
+
+
+// UPDATED
+
+var list = ["one",];
+var quest = prompt("What would you like to do?");
+while (quest !== "quit") {
+    
+    if (quest === "list"){
+        listTodo();
+}
+else if (quest === "new"){
+       addTodo();
+}
+else if (quest === "delete"){
+       deleteTodo();
+}
+
+  quest = prompt("What would you like to do?");
+
+}
+alert ("good bye");
+
+function listTodo (){
+        list.forEach(function(todo, i){
+                console.log(i + ":" + todo)
+        })
+}
+function addTodo (){
+        var newQuest = prompt ("add something to do");
+        list.push(newQuest);
+}
+function deleteTodo(){
+        var index = prompt ("enter index for delete");
+        list.splice(index,1);
+}
