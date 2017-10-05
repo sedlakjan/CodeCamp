@@ -4,6 +4,7 @@ var col ["green","blue","red"]; col.push("yellow") // Ads yeallow at the end of 
                                  col.shift() // Remove [0] var from col
                                  col.indexOf("blue") // Find item in array blue = [1], if not found then [-1]
                                  var anotherColor = col.slice(0, 2) // copy items from variable
+                                 col.forEach(function(whatEver){}); // pre var.col vypise hodnoty z array, funkcia moze mat svoj nazov
                                  
 
 
