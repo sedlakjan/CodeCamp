@@ -1,0 +1,15 @@
+// arr.forEach(someFunction)
+var colors = ["red","blue","green"]
+colors.forEach(function(color){
+// color is a placeholder, I can call it whatever I want
+console.log(color);
+});
+
+function myForEach(arr, func){
+//loop throu arr
+for (var i = 0; i < arr.length; i++) {
+    //call func for each item in array
+    func(arr[i]);    
+    }
+}
+//example: myForEach(colors, alert) - alerts one by one every color from array
