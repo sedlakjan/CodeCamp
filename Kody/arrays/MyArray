@@ -13,3 +13,24 @@ for (var i = 0; i < arr.length; i++) {
     }
 }
 //example: myForEach(colors, alert) - alerts one by one every color from array
+
+(function(){
+    console.log("I'm terminator");
+})()
+myForEach(colors, function (){alert("Hi")}) //alol?
+
+//alol2
+Array.prototype.myForEach = function(func){
+for(var i=0; i<this.length; i++){
+func(this[i]);
+    }
+}
+function (func){
+for(var i=0; i<this.length; i++){
+func(this[i]);
+    }
+ }
+ var friends = ("charlie", "magda")
+ friends.myForEach(function(name){
+ console.log("I like" name);
+ })
