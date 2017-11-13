@@ -34,3 +34,21 @@ var allSort = {
         numbers:5
     }
 };
+
+
+
+var posts = [
+    {
+        title: "author",
+        post: "I don't know",
+        comments:["hello", "nice"]
+    },
+    {
+        title: "another one",
+        post: "bla bla",
+        comments:["hello again", "nice to meet youuu"]
+    }
+]
+//accesing stuff from var // posts.length je 2 (2objects)
+posts[0].title //console bude "author"
+posts[1].comments[1]//console "nice to....."
