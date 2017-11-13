@@ -3,13 +3,34 @@ var nieco = {
     narodenie: "Nratislava",
     1x: 1234,
 };
-//notations differences
+    //notations differences
 nieco.1x //invalid
 nieco["1x"] // valid - if property starts with number can't use dot
-//look up 
+
+    //look up 
 var str = "name";
 someObject.str // doesn't look for name
 someObject[str] // evaluate str and look for "name"
 //property name with space
 someObject.fav color // invalid
 someObject["fav color"];//Valid
+
+    //accesing propety
+nieco["vek"] += 1;
+nieco.vek= 24;
+    //1 adding
+var person = [];
+person.name = "Rusty";
+    //2 WOOT?
+var person = new Object();
+person.name = "troll";
+    //example of all sorts of data
+var allSort = {
+    name: "small",
+    nums: [2,3,4,5],
+    IsHungry:true,
+     species:{
+        age:2,
+        numbers:5
+    }
+};
