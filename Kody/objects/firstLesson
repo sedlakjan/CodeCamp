@@ -1,0 +1,15 @@
+var nieco = {
+    meno: "fero",
+    narodenie: "Nratislava",
+    1x: 1234,
+};
+//notations differences
+nieco.1x //invalid
+nieco["1x"] // valid - if property starts with number can't use dot
+//look up 
+var str = "name";
+someObject.str // doesn't look for name
+someObject[str] // evaluate str and look for "name"
+//property name with space
+someObject.fav color // invalid
+someObject["fav color"];//Valid
