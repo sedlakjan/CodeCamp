@@ -1,0 +1,28 @@
+console.log("hello");
+
+
+var movies = [
+    {title: "star wars",
+    rating: 7,
+    watched: true
+},
+{title: "shrek",
+rating: 6,
+watched: false
+},
+{title: "interstelar",
+rating: 9,
+watched: true
+}
+]
+movies.forEach(function(movie){
+    var result = "Yo have ";
+    if (movie.watched){
+    result += "watched ";
+}else{
+    result += "not watched ";
+}
+result += ":" + movie.title + " "
+result += movie.rating
+console.log(result + " stars.");
+});
